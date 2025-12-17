@@ -1,0 +1,30 @@
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+env/
+venv/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# CSV files (optionnel - garder seulement le fichier final)
+# Décommenter pour ignorer les fichiers CSV sources volumineux
+# carcteristiques-2022.csv
+# usagers-2022 (1).csv
+# vehicules-2022.csv
+# lieux-2022.csv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
