@@ -58,7 +58,7 @@ python data_preparation.py
 ```
 
 ### Explorer les données
-Ouvrir les notebooks dans `notebooks/` avec Jupyter
+Ouvrir les notebooks dans `notebooks/` 
 
 ## 📊 Dataset Final
 
@@ -78,7 +78,7 @@ Ouvrir les notebooks dans `notebooks/` avec Jupyter
 ## 👥 Contributeurs
 
 - Mahran Amor
-- [Votre Collaborateur]
+- Ayoub Kallel
 
 ## 📝 Licence
 

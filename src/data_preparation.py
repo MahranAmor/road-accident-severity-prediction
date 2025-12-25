@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 import os
 
 # =========================
@@ -17,6 +18,15 @@ def load_data():
     carac = carac.rename(columns={"Accident_Id": "Num_Acc"})
     
     return carac, usagers, vehicules, lieux
+
+def load_final_dataset(filepath="../data/accidents_dataset_final.csv"):
+    """Charge le dataset final des accidents avec gestion des types"""
+    # Charger les données avec le bon séparateur
+    df = pd.read_csv(filepath, sep=';', encoding='utf-8')
+    
+    print(f"✓ Dataset chargé: {df.shape[0]} lignes, {df.shape[1]} colonnes")
+    
+    return df
 
 # =========================
 # 2. Créer la variable cible (gravité accident)
