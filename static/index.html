@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Accident Severity - Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Accident Severity Predictor</h1>
+      <p>Simple dashboard demo — enter the features and get prediction from the tuned XGBoost model.</p>
+    </header>
+
+    <main>
+      <section class="controls">
+        <form id="predict-form">
+          <div id="features"></div>
+          <div class="buttons">
+            <button type="submit">Predict</button>
+            <button type="button" id="use-sample">Use sample values</button>
+            <button type="button" id="reset">Reset</button>
+          </div>
+        </form>
+      </section>
+
+      <section class="result">
+        <h2>Prediction</h2>
+        <div id="result-area">
+          <p><strong>Probability:</strong> <span id="prob">—</span></p>
+          <p><strong>Prediction (0.5):</strong> <span id="pred-default">—</span></p>
+          <p><strong>Prediction (optimized):</strong> <span id="pred-thr">—</span></p>
+          <p><strong>Threshold used:</strong> <span id="thr">—</span></p>
+        </div>
+      </section>
+
+      <section class="info">
+        <h3>Selected features</h3>
+        <ul id="feat-list"></ul>
+      </section>
+    </main>
+
+    <footer>
+      <small>Local demo • FastAPI backend • XGBoost model</small>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
